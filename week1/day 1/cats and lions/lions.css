@@ -1,0 +1,41 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+h1 { 
+    color: red;
+    border-bottom: 1px solid black;
+
+
+
+}
+
+h3 {
+    color: red;
+
+}
+
+.table-wrapper{
+
+}
+ table { 
+    width: 100%;
+
+ }
+
+ .cell-red {
+    color: red;
+ }
+ 
+.cell-bordered { 
+    border: 1px solid;
+}
+.cell-centred { 
+    text-align: center;
+}
+
+.cell-padded {
+    padding: 8px 3px 8px 3px;
+}
+.cell-separated
