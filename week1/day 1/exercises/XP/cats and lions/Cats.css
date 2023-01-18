@@ -1,0 +1,42 @@
+body{ 
+    padding: 0;
+    margin: 0;
+    
+}
+ h1 { 
+    border-bottom: 1px black solid;
+    color: red;
+    padding-bottom: 10px;
+ }
+
+ h2 { 
+    color: blue;
+ }
+
+ h3 { 
+    padding-left: 30px;
+ }
+
+ .senses-wrapper {
+   padding-left: 30px;
+    
+ }
+
+ h4 { 
+    color: blue;
+ }
+
+ .media { 
+   width: 100%;
+   height: auto;
+   padding-right: 40px;
+
+ }
+
+ .highlight {
+   border-radius: 2px;
+   background-color: yellow;
+   padding: 0 2px 0 2px;
+
+ }
+  

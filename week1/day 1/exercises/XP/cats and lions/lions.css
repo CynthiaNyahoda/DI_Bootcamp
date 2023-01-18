@@ -1,0 +1,78 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+h1 { 
+    color: red;
+    border-bottom: 1px solid black;
+
+
+
+}
+
+h3 {
+    color: red;
+
+}
+
+.table-wrapper{
+    padding: 0 40px 0 40px;
+
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherits;
+}
+ table { 
+    width: 100%;
+
+ }
+
+ tbody {
+    display:table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+ }
+
+ .cell-red {
+    color: red;
+    border-color:red;
+
+ }
+
+ .cell-half-width { 
+    width: 50%;
+ }
+ 
+.cell-bordered { 
+    border: 1px solid black;
+}
+.cell-centred { 
+    text-align: center;
+}
+
+.cell-padded {
+    padding: 8px 3px 8px 3px;
+
+}
+    
+
+
+.cell-separator {
+    padding-bottom: 10px;
+
+}
+
+th { 
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+}
+
+.media {
+    width: 100%;
+    height: auto;
+}
