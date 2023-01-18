@@ -1,0 +1,71 @@
+.container {
+    background-color: rgb(77, 71, 65);
+    display: grid;
+    grid-gap: 8px;
+    grid-template-rows: 50px repeat( 4, 80px) 50px;
+    grid-template-areas:
+    "a1 a1 a1 a1"
+    "a2 a3 a3 a3"
+    "a4 a3 a3 a3"
+    "a4 a5 a5 a5"
+    "a6 a6 a6 a7"
+    "a8 a8 a8 a8"
+    
+
+}
+
+.item {
+    color: rgb(236, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border-radius: 2px;
+
+
+}
+
+.item-1 {
+    grid-area: a1;
+    background-color: rgb(192, 58, 192);
+
+}
+
+.item-2 { 
+    grid-area: a2;
+    color: black;
+    background-color: aqua;
+}
+
+.item-3 { 
+    grid-area: a3;
+    color: black;
+    background-color: blue;
+}
+
+.item-4 {
+    grid-area: a4;
+    color: black;
+    background-color: grey;
+}
+
+.item-5 {
+    grid-area: a5;
+    color: black;
+    background-color: green;
+}
+
+.item-6 {
+    grid-area: a6;
+    background-color: palevioletred;
+}
+
+.item-7 { 
+    grid-area: a7;
+    background-color: palegoldenrod;
+}
+
+.item-8 { 
+    grid-area: a8;
+    background-color: yellow;
+}

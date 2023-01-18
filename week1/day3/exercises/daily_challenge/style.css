@@ -1,0 +1,46 @@
+body {
+
+}
+
+
+
+.container {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-gap: 8px;
+    grid-template-areas: 
+    ". a a ."
+    ". a a ."
+    ". a a ."
+    ". a a ."
+    ;
+    
+    
+}
+
+.cell { 
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+
+    
+}
+
+.center-cell { 
+
+    grid-area: a;
+    display: flex;
+    
+    
+    
+    
+}
+
+.inner-cell {
+
+    display: flex;
+    align-self: center;
+    gap: 100px;
+    flex-grow: 1;
+}
