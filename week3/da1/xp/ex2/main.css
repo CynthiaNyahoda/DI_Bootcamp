@@ -1,0 +1,16 @@
+div {
+    background-color: lightblue;
+    padding: 5%;
+}
+
+li:first-child {
+    display: none;
+}
+
+li:last-child {
+    border: 5px solid rosybrown;
+}
+
+body {
+    font-size: 30px;
+}
