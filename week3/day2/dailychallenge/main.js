@@ -5,29 +5,13 @@
 
     
 const button = getbutton()
+const shuffleButton = document.getElementById("shuffle")
     button?.addEventListener('click', handleclick)
      console.log("button", button)
      
-     function getbutton() {
-        return document.getElementById("lib-button")
-}
-     
-
-
-const noun = document.getElementById("noun")
-console.log("noun", noun)
-const adjective = document.getElementById("adjective")
-console.log("adjective", adjective)
-const person = document. getElementById("person")
-console.log("person", person)
-const verb = document.getElementById("verb")
-console.log("verb", verb)
-const place = document.getElementById("place")
-console.log("place", place)
-
-
-
-
+    
+    
+    
 
 function handleclick(e) {
             e.preventDefault()
@@ -42,29 +26,38 @@ function handleclick(e) {
             const place = document.getElementById("place").Value
 
 
-if (( noun == ""|| adjective==""|| person==""|| verb ==""|| place=="")){
-    console.log("complete, well done!!")
-} else {
-    console.log("incomplete")
+if (noun == ""|| adjective==""|| person==""|| verb ==""|| place=="") return
+
+const story = generateStory(noun, adjective, person, verb, place)
+    console.log("story", story)
+
+    appendStoryTopage(story)
 }
-const story = generateStory(noun, adjective,person,verb,place)
-console.log("story", story)
-}  
-           
+
+function appendStoryTopage(story) {
+    const paragraph = document.getElementById("story")
+    const span = document.createElement("span")
+    span.innerText= story
+    paragraph?.appendChild(span)
+}
+
 
 function generateStory(noun, adjective, person, verb, place) {
-        return `Early this morning the ${noun} was found to be ${adjective} and ${person} had just ${verb} at ${place} the very same day.`
-        
-    }
+    return `Early this morning the ${noun} was found to be ${adjective} and ${person} had just ${verb} at ${place} the very same day.`
+    
+}
+
+
+function getbutton() {
+    return document.getElementById("lib-button")
+}
+
+
+           
+
     
     
     
-// appendStoryTopage()
-// }
-
-// // function appendStoryTopage() {
-// //     const paragraph = document.getElementById
-// // }
 
 
 
@@ -78,15 +71,7 @@ function generateStory(noun, adjective, person, verb, place) {
 
 
 
-// // // // const getvalue = () => {
-// // // //     // get form first
-// // // //     const form = document.forms
-// // // //     // use const form = document.getElementById('forms')
 
-// // // //     // target element
-// // // //     const fname = form.elements.fname.value
-// // // //     const lname = form.elements.lname.value
-// // // //     alert (`${fname}-${lname}`)
-// // // // }
+
 
 
