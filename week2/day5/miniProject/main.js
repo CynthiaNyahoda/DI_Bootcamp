@@ -5,6 +5,14 @@
         return
     }
     const answer = prompt ("Enter a number")
+    let numberOfTries = 0
+    while (Number (answer)!= compareNumber){
+        numberOfTries = numberOfTries + 1
+        if (numberOfTries === 3) {
+            alert("sorry, too many tries. The number was "+ computerNumber)
+            return
+        }
+    }
     
     
     if(onlyNumbers(answer)) {
