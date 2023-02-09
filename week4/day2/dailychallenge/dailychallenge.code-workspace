@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../xp"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "examples"
+	}
+}
