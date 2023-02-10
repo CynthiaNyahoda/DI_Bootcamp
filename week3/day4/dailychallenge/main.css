@@ -1,0 +1,20 @@
+.listTasks {
+    margin: 20px;
+  }
+  
+  .listTasks input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .listTasks label {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .listTasks input[type="checkbox"]:checked + label {
+    color: red;
+    text-decoration: line-through;
+  }
+  
+ 
+  
