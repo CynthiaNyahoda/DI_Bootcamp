@@ -1,0 +1,16 @@
+
+#grid td {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+#colors .color {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+  
