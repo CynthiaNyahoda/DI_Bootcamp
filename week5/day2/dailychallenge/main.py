@@ -38,6 +38,5 @@ class Pagination:
             pageNum = self.totalPages
         self.currentPage = pageNum
         return self
-    
-  
+ 
 
