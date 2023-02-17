@@ -32,6 +32,8 @@ METHODS
 # you can create an API using flask
 # used to send data
 #  3. PUT is the third
+#  5. patch is 4th
+#  6. delete is the 5th
 
 
 # PYTHON API
@@ -47,3 +49,13 @@ print(type(joke))
 
 
 # you can build a weather app
+
+# REQUESTS
+# get requests 
+# JSON
+
+
+# QUERRY PARAMETERS
+# "search" is one of the querry parameters 
+
+# requests
