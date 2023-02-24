@@ -1,0 +1,2 @@
+-- Write a query to get the address, and the phone number of all customers living in the Texas district, these details can be found in the “address” table.
+SELECT address, phone FROM address WHERE district = 'Texas'
