@@ -1,0 +1,2 @@
+-- Write a query to get the full names of all the employees in the employees table. You have to include the first name and last name.
+SELECT CONCAT(first_name, ' ', last_name) AS Full_Name FROM employees
