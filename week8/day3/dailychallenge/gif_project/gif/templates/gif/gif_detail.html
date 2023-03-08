@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ gif.title }}</h1>
+  <img src="{{ gif.url }}" alt="{{ gif.title }}">
+  <p>Likes: <span id="likes">{{ gif.likes }}</span></p>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit" name="like" class="btn btn-success">Like</button>
+    <button type="submit" name="dislike" class="btn btn-danger">Dislike</button>
+  </form>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      fetch(window.location.href, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'X-CSRFToken': '{{ csrf_token }}'
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        document.querySelector('#likes').textContent = data.likes;
+      });
+    });
+  </script>
+{% endblock %}
+
