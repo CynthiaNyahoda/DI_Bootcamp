@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ person.name }}</h1>
+  <p>{{ person.phone_number.as_international }}</p>
+  <p>{{ person.email }}</p>
+  <p>{{ person.address }}</p>
+{% endblock %}

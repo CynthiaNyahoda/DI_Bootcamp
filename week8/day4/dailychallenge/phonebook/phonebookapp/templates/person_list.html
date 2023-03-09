@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Search Results for '{{ name }}'</h1>
+  {% for person in persons %}
+    <h2><a href="{% url 'phonebookapp:person_by_phonenumber' phone_number=person.phone_number %}">{{ person.name }}</a></h2>
+    <p>{{ person.phone_number.as_international }}</p>
+    <p>{{ person.email }}</p>
+    <p>{{ person.address }}</p>
+  {% empty %}
+    <p>No
