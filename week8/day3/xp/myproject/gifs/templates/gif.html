@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{ gif.title }}</h1>
+    <img src="{{ gif.url }}" alt="{{ gif.title }}">
+    <p>Uploader: {{ gif.uploader_name }}</p>
+    <p>Created at: {{ gif.created_at }}</p>
+    <p>Categories:</p>
+    <ul>
+        {% for category in gif.categories.all %}
+            <li>{{ category.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
