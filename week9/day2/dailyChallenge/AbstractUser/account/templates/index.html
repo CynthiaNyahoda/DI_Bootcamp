@@ -1,0 +1,46 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  <title>Page Title</title>
+</head>
+<body>
+    <div class="content"> 
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 contents">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <div class="form-block">
+                                <div class="mb-4">
+                                    <h1>I Guess it Worked</h1>
+                                </div>
+                                <label> log in if you already have registered!</label>
+                                <div class="form-group last mb-4">
+                                    <div><button class="btn btn-pill text-white btn-block btn-primary"><a href="{% url 'login_view' %}">login</a></button></div>
+                                </div>
+                                <label>If not, register here!</label>
+                                <div class="form-group last mb-4">
+                                    <div><button class="btn btnt-pill text-white btn-block btn-primary"><a href="{% url 'register' %}">register</a></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  <p>This is a paragraph.</p>
+  <img src="image.jpg" alt="Description of image">
+  
+</body>
+</html>
