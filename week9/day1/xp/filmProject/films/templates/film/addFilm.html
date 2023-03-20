@@ -1,7 +1,9 @@
 {%extends 'partials/base.html' %}
 
-{%block content %}
+{%block title%}
 <h2>Add Film</h2>
+{% endblock title%}
+{%block content %}
 <form>
     {% csrf_token%}
     {{ form.as_p }}
