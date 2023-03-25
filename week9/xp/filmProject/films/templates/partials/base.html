@@ -1,0 +1,31 @@
+<html> 
+    <head>
+        <title>{%block title%}Film Project{% endblock %}</title>
+        <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <head>
+        <body>
+            {% block content %}{% endblock%}
+            <footer class="footer mt-auto py-3 bg-light">
+                <div class+"container">
+                    <span class="text-muted">Film Project &copy; {%now "Y" %}</span>
+                </div>
+            
+  <h1>{{ film.title }}</h1>
+  <p>{{ film.description }}</p>
+  {% star_ratings_widget film.rating %}
+  {% if comments %}
+    <h2>Comments</h2>
+    <ul>
+      {% for comment in comments %}
+        <li>{{ comment.text }} - {{ comment.author }} - {{ comment.created_at }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  <h2>Add a comment</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="
+            </footer>
+        </body>
+</html>
